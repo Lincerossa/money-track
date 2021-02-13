@@ -60,6 +60,7 @@ const App = () => {
       }
       r.readAsBinaryString(f)
     } else {
+      // eslint-disable-next-line no-console
       console.log('Failed to load file')
     }
   }, [setSheet, myInput])
@@ -122,6 +123,7 @@ const App = () => {
     setBuckets(result)
   }, [sheet, setBuckets])
 
+  // eslint-disable-next-line no-console
   console.log({ buckets })
   return (
     <>
